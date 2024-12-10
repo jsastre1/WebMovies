@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.movie {
+    margin: 20px 0; /* Espaciado entre películas */
+    border: 1px solid #ddd; /* Bordes para las películas */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Para centrar el bloque */
+    width: 300px; /* Ancho fijo para cada bloque de película */
+}
+h4 {
+    margin-top: 20px;
+}
+
+/* Contenedor principal de la lista de películas */
+#peliculas-lista {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto; /* Centra el contenedor */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* Estilo para cada película */
+.pelicula {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Imagen de la película */
+.pelicula img {
+    max-width: 150px;
+    border-radius: 8px;
+}
+.peliculas-lista { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+} 
+.pelicula { 
+    flex: 1 1 calc(33.333% - 20px); 
+    /* Tres columnas */ 
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+} 
+.pelicula img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; }
+.img {
+        max-width: 100%; /* Ancho máximo para imágenes */
+        height: auto; /* Altura automática para mantener la proporción */
+    }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cambiamos a 4 columnas */
+    gap: 20px;
+}
+.movie-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+.movie-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.movie-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+.movie-card img.poster {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.movie-card a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.movie-card a:hover {
+    text-decoration: underline;
+}
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+    }
+}
+
+/* Estilos del footer */
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
